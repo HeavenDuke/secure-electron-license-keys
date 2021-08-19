@@ -23,7 +23,7 @@ const parseVersion = function (version) {
     }
 }
 
-const validate = function (fs, crypto, options) {
+export const validate = function (fs, crypto, options) {
     let validationResult = {
         success: false,
         appVersion: parseVersion(options.version)
